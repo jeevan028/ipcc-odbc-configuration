@@ -8,7 +8,7 @@ pipeline {
   
   environment {
       username = "admin"
-      mysecret = "rds!db-0151ba78-0d24-475c-9878-d66e6de9880b"
+      mysecret = "rds!db-5c3a8de9-1ba7-4719-a656-891945b3145a"
       aws_region = 'ap-south-1'
       fpath="${WORKSPACE}"
       dsn = "asterisk-ipcc-db"
@@ -27,7 +27,7 @@ pipeline {
       stage('SCM Checkout') {
             steps {
                 
-                git branch: 'main', url: 'https://github.com/sarbajitD-24/ipcc-odbc-configuration.git'
+                git branch: 'main', url: 'https://github.com/jeevan028/ipcc-odbc-configuration.git'
                 
             }
         }
